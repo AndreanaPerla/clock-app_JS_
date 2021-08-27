@@ -1,0 +1,175 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-image: url(/images/morning-sky01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    min-height: 80vh;
+    border-radius: 0.75rem;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* clock container */
+
+.clock-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-end;
+    padding: 5% 5%;
+    text-transform: uppercase;
+}
+
+.clock-container h2,
+.clock-container h1 {
+    margin: 0;
+}
+
+.greet-container {
+    margin-bottom: 2.5%;
+}
+
+.clock h2,
+.greet {
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+}
+
+.location {
+    font-weight: 400;
+}
+
+.clock-now {
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+/* time container */
+
+.time-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex: 1;
+    text-transform: uppercase;
+    padding: 10% 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.timezone-title,
+.day-title, 
+.weather h2{
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+}
+
+.timezone-title,
+.day-title {
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.current-timezone,
+.number-day {
+    margin:0;
+}
+
+.weather h2 {
+    line-height: 200%;
+}
+
+.current-timezone,
+.number-day,
+.how-weather,
+.temperature {
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+/* tablet */
+
+@media (max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clock-container {
+        padding: 7.5% 7.5%;
+    }
+
+    .clock h2,
+    .greet {
+        font-size: 1.75vw;
+    }
+
+    .clock-now {
+        font-size: 9vw;
+    }
+
+    .time-container {
+        padding: 5% 7.5%;
+        border-radius: 0 0rem 0.75rem 0.75rem;
+    }
+
+    .timezone-title,
+    .day-title, 
+    .weather h2{
+        font-size: 1.75vw;
+    }
+
+    .current-timezone,
+    .number-day,
+    .how-weather,
+    .temperature {
+        font-size: 1.75vw;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 415px) {
+    .clock h2,
+    .greet {
+        font-size: 2.25vw;
+    }
+
+    .clock-now {
+        font-size: 13vw;
+    }
+
+    .timezone-title,
+    .day-title, 
+    .weather h2{
+        font-size: 2.25vw;
+    }
+
+    .current-timezone,
+    .number-day,
+    .how-weather,
+    .temperature {
+        font-size: 2.25vw;
+    }
+}

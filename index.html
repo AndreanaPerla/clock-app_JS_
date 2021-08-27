@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Clock app</title>
+</head>
+<body>
+    <main class='main'>
+        <!-- clock section -->
+        <div class="clock-container">
+            <div class="greet-container">
+                <h2 class='greet'>Good morning!</h2>
+            </div>
+            <div class="clock">
+                <h2>It's currently</h2>
+                <h1 class='clock-now'></h1>
+                <h2>in <span class="location"></span></h2>
+            </div>
+        </div>
+
+        <!-- time & weather section -->
+        <div class="time-container">
+            <div class="timezone">
+                <h2 class='timezone-title'>Current timezone</h2>
+                <h2 class='current-timezone'></h2>
+            </div>
+            <div class="day-of-week">
+                <h2 class="day-title">Day of the week</h2>
+                <h2 class='number-day'></h2>
+            </div>
+            <div class="weather">
+                <h2>Today's weather is <span class="how-weather"></span> and there are <span class="temperature"></span></h2>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
