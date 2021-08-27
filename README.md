@@ -4,3 +4,5 @@ Simple clock app (completely responsive) which displays the current time, the da
 Made by using two different APIs: worldtimeapi and openweathermap.
 
 ![Design preview for the clock app](images/design.PNG)
+
+Deploy -> https://clock-app-5hhfd6037-andreanaperla.vercel.app/
