@@ -1,1 +1,1 @@
-# clock-app_JS_
+# Clock app
