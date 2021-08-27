@@ -71,7 +71,7 @@ function getWeather() {
             let lon = position.coords.longitude;
 
             let apiKey = 'c4e10ce7b57a0085d920746d92728e42';
-            const URL_WEATHER = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;            
+            const URL_WEATHER = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;            
             fetch(URL_WEATHER)
                 .then(function(weatherRes) {
                     return weatherRes.json();
